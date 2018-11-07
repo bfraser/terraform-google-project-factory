@@ -43,6 +43,11 @@ variable "shared_vpc" {
   default     = ""
 }
 
+variable "shared_vpc_subnet_count " {
+  description = "Number of shared VPC subnets"
+  default      = 0
+}
+
 variable "billing_account" {
   description = "The ID of the billing account to associate this project with"
 }
