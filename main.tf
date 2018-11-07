@@ -115,7 +115,7 @@ resource "google_project_service" "project_services" {
   Shared VPC configuration
  *****************************************/
 resource "google_compute_shared_vpc_service_project" "shared_vpc_attachment" {
-  count = "${var.shared_vpc_enabled != "true" ? 1 : 0}"
+  count = "${var.shared_vpc_enabled == "true" ? 1 : 0}"
 
   host_project    = "${var.shared_vpc}"
   service_project = "${local.project_id}"
