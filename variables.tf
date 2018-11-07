@@ -43,7 +43,7 @@ variable "shared_vpc" {
   default     = ""
 }
 
-variable "shared_vpc_subnet_count " {
+variable "shared_vpc_subnet_count" {
   description = "Number of shared VPC subnets"
   default      = 0
 }
