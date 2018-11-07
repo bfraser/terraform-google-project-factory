@@ -33,6 +33,11 @@ variable "name" {
   description = "The name for the project"
 }
 
+variable "shared_vpc_enabled" {
+  description = "Whether the projects uses a shared VPC"
+  default     = "false"
+}
+
 variable "shared_vpc" {
   description = "The ID of the host project which hosts the shared VPC"
   default     = ""
